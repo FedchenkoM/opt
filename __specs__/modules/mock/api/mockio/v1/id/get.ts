@@ -13,19 +13,19 @@ export class GetCartItemsMock extends MockObject {
         return [
             {
                 id: 1,
-                name: 'Some weird name',
+                name: 'SanDisk 128GB Ultra MicroSDXC',
                 price: 1000,
                 quantity: 1,
             },
             {
                 id: 2,
-                name: 'This should`n be in snapshot!!',
+                name: 'BENGOO G9000 Stereo Gaming Headset',
                 price: 42,
                 quantity: 1,
             },
             {
                 id: 3,
-                name: 'Wrong Name',
+                name: 'Logitech C922x Pro Stream Webcam',
                 price: 100,
                 quantity: 2,
             },

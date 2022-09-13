@@ -11,7 +11,7 @@ const INITIAL_STATE = {
             {
                 name: 'Leet o.1337 v2',
                 price: 150,
-                quantity: 5,
+                quantity: INITIAL_ITEM_COUNT,
                 id: 1,
             },
         ],
@@ -50,6 +50,9 @@ describe('Item Quantity', () => {
         // Negative quantity test :)
 
         reporter.startStep('Item quantity should be one');
+        for (let i = 0; i <= INITIAL_ITEM_COUNT; i++) {
+            await item.removeOne()
+        }
         expect(await item.getQuantity()).toBe(1);
         reporter.endStep();
     });
